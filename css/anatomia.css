@@ -1,0 +1,12 @@
+h1 {
+    color: aquamarine;
+    font-size: 60px;
+    background: black;
+}
+
+/*
+    * Selector -> h1
+    * Declaration -> tudo que tiver dentro de {}
+    * Properties -> color 
+    * Property Value -> aquamarine
+*/
