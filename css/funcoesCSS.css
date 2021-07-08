@@ -1,0 +1,12 @@
+
+/*
+    * nome seguindo de abre e fecha parentesis
+    * recebe argumentos
+*/
+
+@import url("aqui vai o argumento");
+
+#exemplo {
+    color: rgb(red, green, blue);
+    width: calc(100% - 10px);
+}
