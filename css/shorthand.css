@@ -1,0 +1,29 @@
+/*
+    * Junção de propriedades 
+    * Colocar diversas propriedades de forma resumida
+    * Bem mais legível
+*/
+
+#exemplo {
+    background-color: #000;
+    background-image: url(images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+
+#exemplo_shorthand {
+    background: #000 url(images/bg.gif) no-repeat left top;
+}
+
+/*As vezes se tiver muita propriedade vale a pena colocar como shorthand
+
+    * Não irá considerar propriedades anteriores
+    * valores não especidicados irão assumir o valor padrão
+    * geralmente. a ordem descrita não importa, mas se ouver muitas propriedades com valor
+    semelhante, poderemos encontrar problemas
+
+
+    link para estudo (não precisa decorar, vai aprendendo conforme a necessidade):
+
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties
+*/
