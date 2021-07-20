@@ -1,0 +1,39 @@
+- espear que o usuário digite uma url <br>
+- irá validar se o valor for uma url <br>
+
+# atributos <br>
+    - placeholder <br>
+    - readonly / disabled <br>
+    - value <br>
+
+    - required
+
+    * minlenght / maxlength <br>
+        - O mínimo/ máximo valor que o campo irá conter <br>
+
+    * size <br>
+        - valor númerico identificando quantos caracteres o campo deverá conter<br>
+    
+    * pattern <br>
+        - uso de expressão regular para validar o campo
+        - exemplo: pattern=".\.com\.br\/.*" <br>
+
+    * list <br>
+        - o id de ua tag datalist que está no mesmo documento <br>
+        - datalist irá conter uma lista de valores pré definidos <br>
+        - só apresenta valores compatíveis com o campo <br>
+    
+    * spellcheck <br>
+        - habilita a verificação ortofráfica para este input <br><br>
+
+<form action="">
+
+    <input type="url"
+        placeholder="http://exemplo.com"
+        required
+        pattern=".\.com\.br.*"
+        title="Somente domínios .com.br serão aceitos"
+        spellcheck="false">
+        
+    <button type="submit">enviar</button>
+</form>

@@ -1,0 +1,36 @@
+- Espera que o usuário digete um email <br>
+- Irá validar se o valor digitado é um email <br>
+
+# Atributos <br>
+    - placeholder <br>
+    - readonly / disabled <br>
+    - valur <br>
+
+    - required <br>
+
+    * multiple <br>
+        - O campo irá receber 1 ou mais emails, separado por vírgulas <br>
+
+    * minlenght / maxlength <br>
+        - O mínimo/ máximo valor que o campo irá conter <br>
+    
+    * size <br>
+        - valor númerico identificando quantos caracteres o campo deverá conter<br>
+        
+    * pattern <br>
+        - uso de expressão regular para validar o campo
+        - exemplo: pattern=".+@rocketseat\.com\.br" <br>
+    
+    * list <br>
+        - o id de ua tag datalist que está no mesmo documento <br>
+        - datalist irá conter uma lista de valores pré definidos <br>
+        - só apresenta valores compatíveis com o campo <br> <br>
+        
+<form action="">
+
+    <input type="email" 
+        placeholder="digite seu email"
+        required>
+
+    <button type="submit">enviar</button>
+</form>
