@@ -11,9 +11,17 @@ modal.addEventListener('click', ()=> {
 e o escape e add novamente invisible a lista de classes*/ 
 document.addEventListener('keydown', (event) => {
 
-    const ifEscKey = event.key === 'Escape'
+    //verificando se existe class invisible dentro do modalwrapper
+    const checkExistence = modalWrapper.classList.contains('invisible')
 
-    if(ifEscKey) {
-        modalWrapper.classList.add('invisible')
+    //Só executa esse bloco de código se caso não exista invisible
+    if (!checkExistence) {
+
+        const ifEscKey = event.key === 'Escape'
+
+        if(ifEscKey) {
+            modalWrapper.classList.add('invisible')
+        }
     }
+
 })
