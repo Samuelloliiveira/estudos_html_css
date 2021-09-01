@@ -1,0 +1,63 @@
+Distâncias absolutas <length> <br> <br>
+    
+    São fixas e não alteram seu valor. <br><br>
+    
+    | Unidade  | Nome                | Equivalência         |<br>
+    |----------|---------------------|----------------------|<br>
+    | cm       | Centímetros         | 1cm = 96px/2.54      | <br>
+    | in       | Inches (polegadas)  | 1in = 2.54cm = 96px  | <br>
+    | px       | Pixels              | 1px = 1/96th of 1in  | <br><br>
+
+    * o mais comum e mais utilizado é o px <br><br>
+    
+    * não é recomendado usar cm <br><br>
+    
+    Distâncias relativas <br><br>
+    São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.<br><br>
+
+    Benefício: Maior adaptação aos diferentes tipos de tela.<br><br>
+    | Unidade  | Relativo a                                    |<br>
+    |----------|-----------------------------------------------|<br>
+    | em       | Tamanho da font do elemento pai               |<br>
+    | rem      | Tamanho da font do elemento raiz (root/html)  |<br>
+    | vw       | 1% da viewport wid                            |<br>
+    | vh       | 1% da viewport height                         |<br><br>
+
+    Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor 
+    temos que fazer a alteração no root ou no elemento html.
+    :root <br><br>
+    
+    O viewport é a parte da tela que está sendo exibida. 
+    No caso dos navegadores web, é o que é exibido na janela/tela do documento. 
+    Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll 
+    da área de visualização. <br><br>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            div{
+                font-size: 20px;
+                color: red;
+            }
+    
+            /* OU */
+    
+            p{
+                font-size: 1.6em; /*relativo ao pai no caso a div */
+            }
+
+        </style>
+
+    </head>
+    <body>
+           <div>
+               <p>Parágrafo</p>
+           </div>
+    </body>
+    </html>

@@ -1,0 +1,37 @@
+* Strings: texto envolto em aspas <br>
+* Identificadores: podemos ter nomes de cores como red, black, gold <br>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            height: calc(50% - 40px);
+            width: 50%;
+            background-image: url(http://source.unsplash.com/random);
+            background-repeat: no-repeat;
+            background-position: right 50px;
+        }
+
+        .box::after {/*Pseudo-elementos*/
+            content: "Entendendo Strings e Identificadores";
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
