@@ -1,0 +1,41 @@
+* É um tipo de seletor que irá selecionar um elemento que estiver em um estado específico. <br>
+
+* Exemplo: É o primeiro elemento dentro de uma caixa, ou, o elemento está com o ponteiro do mouse sobre ele. <br>
+
+* Pseudo-classes começam com 2 pontos seguido do nome da pseudo class :pseudo-class-name <br><br>
+
+:first-child - É quando queremos selecionar o primeiro filho de um grupo de elementos. <br>
+:nth-of-type() - Pega o elemento por tipo e posição <br>
+:nth-child() - É quando queremos selecionar o primeiro filho de um grupo de elementos. <br><br>
+
+:nth-child(odd) e :nth-child(even) <br>
+    &nbsp even - números pares <br>
+    &nbsp odd - números ímpares <br><br>
+
+
+<h4>Ações do usuário</h4> <br>
+
+    * Algumas estilos só são aplicados quando o usuário faz alguma ação na página. <br><br>
+    
+    :hover - Vai mudar a cor do link para vermelho quando o usuário passar o mouse sobre o link <br><br>
+    
+    :focus - é aplicado quando o elemento recebe o foco da ação do usuário que pode ser feita utilizando 
+    o teclado ou clicando no elemento com o mouse. <br>
+    É comumente usado em campos de input como uma forma de mostrar qual o input "ativo". <br><br>
+
+<h4>Pseudo-elements</h4> <br>
+    &nbsp Com pseudo-elements nós podemos adicionar elementos HTML pelo próprio CSS <br><br>
+
+    ::before - adiciona um pseudo-elemento antes do elemento selecionado. <br>
+    ::after - adiciona um pseudo-elemento depois do elemento selecionado. <br>
+    ::first-line - pega a primeira linha de um texto. <br><br>
+
+Exemplo: <br><br>
+
+li::before {<br>
+    content: "> "<br>
+  }
+
+
+
+
