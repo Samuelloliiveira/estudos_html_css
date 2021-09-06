@@ -1,0 +1,40 @@
+* {
+    height: 95vh;
+}
+
+/*Comentado está em grid*/
+/* .container {
+    display: grid;
+    grid-template-areas: 
+    "main aside";
+
+    gap: 1rem;
+    grid-template-columns: 25%;
+}
+
+/* .container main {
+    grid-area: main;
+    background-color: #cfd1d1;
+    border: 1px solid #9d9e9e;
+}
+
+.container aside {
+    grid-area: aside;
+    border: 1px solid #9d9e9e;
+} */
+
+.container {
+    display: flex;
+    gap: 1rem;
+}
+
+.container aside {
+    flex-basis: 25%;
+    background-color: #cfd1d1;
+    border: 1px solid #9d9e9e;
+}
+
+.container main {
+    flex: 1;
+    border: 1px solid #9d9e9e;
+}
